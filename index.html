@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Discover your future!</h1>
+        <p>Answer these questions to discover your future:</p>
+      </div>
+      <form id="luck-survey">
+        <div class="form-group">
+          <p>Which of the following bad things have you experienced lately:</p>
+          <input type="checkbox" name="bad-luck" value="blackcat">Black cat sighting<br>
+          <input type="checkbox" name="bad-luck" value="ladder">Walked under a ladder<br>
+          <input type="checkbox" name="bad-luck" value="stubtoe">Stubbed your toe<br>
+          <input type="checkbox" name="bad-luck" value="socks">Worn different colored socks<br>
+        </div>
+        <div class="form-group">
+          <p>Which of the following good things have you experienced lately:</p>
+          <input type="checkbox" name="good-luck" value="clover">Found a four-leafed clover<br>
+          <input type="checkbox" name="good-luck" value="rainbow">Seen a rainbow<br>
+          <input type="checkbox" name="good-luck" value="penny">Found a penny<br>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <p></p>
+      <span id="good">
+        <p><b>Things are definitely looking up for you! You have an above average chance of a great day!!</b></p>
+      </span>
+      <span id="medium">
+        <p><b>Looks like things will be business as usual for you.</b></p>
+      </span>
+      <span id="bad">
+        <p><b>I'm not gonna lie; odds are good that this will not be the best day you've ever had.</b></p>
+      </span>
+    </div>
+  </body>
+</html>
